@@ -21,9 +21,6 @@ html {
 body {
   font-family: 'Playfair Display', sans-serif;
   color: #fff;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
   background-color: var(--light-main-color);
 }
 
@@ -770,5 +767,313 @@ select {
   .form-days-label div,
   .form-price-label div {
     flex: 1 1 100%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Добавьте эти медиа-запросы в конец вашего styles.css */
+
+/* Для экранов меньше 1440px (MacBook 13") */
+@media (max-width: 1440px) {
+  .header {
+    padding: 32px 80px;
+  }
+
+  .header-nav {
+    gap: 100px;
+  }
+
+  .header-menu {
+    gap: 30px;
+  }
+
+  .hero-container {
+    padding: 94px 0 356px 80px;
+  }
+
+  .advantages-list {
+    gap: 80px;
+    font-size: 26px;
+    padding: 60px 20px;
+  }
+
+  .about-title,
+  .about-text {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .rest-grid {
+    padding: 0 80px;
+  }
+
+  .footer {
+    padding: 32px 80px;
+  }
+
+  .footer-nav {
+    gap: 100px;
+  }
+}
+
+/* Для экранов меньше 1280px */
+@media (max-width: 1280px) {
+  .header {
+    padding: 32px 40px;
+  }
+
+  .header-nav {
+    gap: 50px;
+  }
+
+  .header-menu {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .hero-container {
+    padding: 94px 0 356px 40px;
+    max-width: 700px;
+  }
+
+  .hero-title {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .advantages-list {
+    gap: 40px;
+    font-size: 22px;
+    padding: 50px 15px;
+    flex-wrap: wrap;
+  }
+
+  .advantages-item {
+    white-space: nowrap;
+  }
+
+  .about-title,
+  .about-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .rest-grid {
+    padding: 0 40px;
+  }
+
+  .rest-card {
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .rest-card-ex {
+    width: 100%;
+    max-width: 795px;
+  }
+
+  .agent-list {
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 32px 40px;
+  }
+
+  .footer-nav {
+    gap: 50px;
+  }
+
+  .footer-menu {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+
+/* Для планшетов */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-container {
+    padding: 80px 30px 200px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .advantages-list {
+    gap: 50px;
+    font-size: 24px;
+  }
+
+  .about-title,
+  .about-text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .rest-grid {
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  .rest-card,
+  .rest-card-ex {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    padding: 8px 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-container {
+    padding: 60px 20px 150px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .advantages-list {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    padding: 40px 20px;
+  }
+
+  .about {
+    height: auto;
+    min-height: 600px;
+  }
+
+  .about-title,
+  .about-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .rest-grid {
+    padding: 0 20px;
+  }
+
+  .rest-card,
+  .rest-card-ex {
+    padding: 30px;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .agent-list {
+    padding: 0 20px;
+  }
+
+  .agent-item img {
+    max-width: 100px;
+  }
+
+  .agent-item-11 img {
+    width: 100px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .hero-button,
+  .form-button {
+    width: 100%;
+  }
+
+  .rest-card,
+  .rest-card-ex {
+    padding: 20px;
+  }
+
+  .contacts-title {
+    font-size: 28px;
+  }
+
+  .contact-info {
+    font-size: 16px;
   }
 }
