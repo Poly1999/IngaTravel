@@ -53,7 +53,6 @@ h2 {
 
 .header-container {
   display: flex;
-  align-items: center;
 }
 
 .header-nav {
@@ -67,7 +66,7 @@ h2 {
   display: flex;
   gap: 50px;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: start;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -83,11 +82,11 @@ h2 {
   color: var(--main-green-color);
 }
 
-.header-logo img {
+/* .header-logo img {
   width: 85px;
   height: 85px;
   object-fit: contain;
-}
+} */
 
 .header-button {
   display: inline-block;
@@ -218,7 +217,6 @@ h2 {
 
 .about {
   margin-top: -50px;
-  /* background-color: var(--submain-green-color); */
   height: 100vh;
   background: linear-gradient(to bottom, #ccf32f, #fff);
   height: 800px;
@@ -327,7 +325,6 @@ h2 {
 .rest-grid {
   display: flex;
   gap: 15px;
-  padding: 0 150px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -626,6 +623,7 @@ select {
 }
 
 .contact-info {
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   margin: 5px 0;
   color: var(--dark-main-color);
@@ -643,9 +641,9 @@ select {
   transition: transform 0.3s, color 0.3s;
 }
 
-.social-icon.instagram i {
+/* .social-icon.instagram i {
   color: #e1306c;
-}
+} */
 .social-icon.whatsapp i {
   color: #25d366;
 }
@@ -671,21 +669,20 @@ select {
 
 .footer-container {
   display: flex;
-  align-items: center;
 }
 
 .footer-nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 645px;
+  gap: 500px;
 }
 
 .footer-menu {
   display: flex;
   gap: 50px;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: start;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -700,12 +697,12 @@ select {
 .footer-menu li a:hover {
   color: var(--main-green-color);
 }
-
+/* 
 .footer-logo img {
   width: 85px;
   height: 85px;
   object-fit: contain;
-}
+} */
 
 .footer-button {
   display: inline-block;
@@ -757,142 +754,8 @@ select {
   opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-  .form-title {
-    font-size: 24px;
-  }
-  form.form {
-    padding: 20px;
-  }
-  .form-days-label div,
-  .form-price-label div {
-    flex: 1 1 100%;
-  }
-}
-
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Добавьте эти медиа-запросы в конец вашего styles.css */
-
-/* Для экранов меньше 1440px (MacBook 13") */
-@media (max-width: 1440px) {
-  .header {
-    padding: 32px 80px;
-  }
-
-  .header-nav {
-    gap: 100px;
-  }
-
-  .header-menu {
-    gap: 30px;
-  }
-
-  .hero-container {
-    padding: 94px 0 356px 80px;
-  }
-
-  .advantages-list {
-    gap: 80px;
-    font-size: 26px;
-    padding: 60px 20px;
-  }
-
-  .about-title,
-  .about-text {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-  .rest-grid {
-    padding: 0 80px;
-  }
-
-  .footer {
-    padding: 32px 80px;
-  }
-
-  .footer-nav {
-    gap: 100px;
-  }
-}
-
-/* Для экранов меньше 1280px */
-@media (max-width: 1280px) {
-  .header {
-    padding: 32px 40px;
-  }
-
-  .header-nav {
-    gap: 50px;
-  }
-
-  .header-menu {
-    gap: 20px;
-    font-size: 14px;
-  }
-
-  .hero-container {
-    padding: 94px 0 356px 40px;
-    max-width: 700px;
-  }
-
-  .hero-title {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  .advantages-list {
-    gap: 40px;
-    font-size: 22px;
-    padding: 50px 15px;
-    flex-wrap: wrap;
-  }
-
-  .advantages-item {
-    white-space: nowrap;
-  }
-
-  .about-title,
-  .about-text {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .rest-grid {
-    padding: 0 40px;
-  }
-
-  .rest-card {
-    width: 100%;
-    max-width: 390px;
-  }
-
-  .rest-card-ex {
-    width: 100%;
-    max-width: 795px;
-  }
-
-  .agent-list {
-    padding: 0 40px;
-    gap: 20px;
-  }
-
-  .footer {
-    padding: 32px 40px;
-  }
-
-  .footer-nav {
-    gap: 50px;
-  }
-
-  .footer-menu {
-    gap: 20px;
-    font-size: 14px;
-  }
-}
 
 /* Для планшетов */
 @media (max-width: 1024px) {
@@ -900,14 +763,10 @@ select {
     padding: 20px 30px;
   }
 
-  .header-nav {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .header-menu {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
   }
 
   .hero-container {
@@ -918,9 +777,8 @@ select {
     font-size: 40px;
   }
 
-  .advantages-list {
-    gap: 50px;
-    font-size: 24px;
+  .advantages-section {
+    display: none;
   }
 
   .about-title,
@@ -937,16 +795,6 @@ select {
   .rest-card,
   .rest-card-ex {
     width: 100%;
-    max-width: 100%;
-  }
-
-  .footer {
-    padding: 30px;
-  }
-
-  .footer-nav {
-    flex-direction: column;
-    gap: 20px;
   }
 }
 
@@ -954,16 +802,22 @@ select {
 @media (max-width: 768px) {
   .header {
     display: flex;
-    gap: 20px;
   }
 
-  .header-logo img {
+  .header-container {
+    display: flex;
+    gap: 150px;
+  }
+
+  /* .header-logo img {
     width: 50px;
     height: 50px;
-  }
+  } */
 
   .header-menu {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
   }
 
   .header-button {
@@ -1004,6 +858,10 @@ select {
     font-size: 16px;
   }
 
+  .country-section {
+    padding-top: 100px;
+  }
+
   .rest-grid {
     padding: 0 20px;
   }
@@ -1031,18 +889,41 @@ select {
     padding: 20px;
   }
 
-  .footer-logo img {
-    width: 60px;
-    height: 60px;
+  .footer-container {
+    display: flex;
+    gap: 150px;
   }
 
+  /* .footer-logo img {
+    width: 60px;
+    height: 60px;
+  } */
+
   .footer-menu {
-    flex-direction: column;
-    gap: 10px;
+    display: flex;
+    gap: 20px;
   }
 }
 
 @media (max-width: 480px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .header-menu {
+    display: flex;
+    gap: 35px;
+  }
+
+  .header-button {
+    padding: 10px 25px;
+    width: 120px;
+    align-items: center;
+  }
+
   .hero-title {
     font-size: 24px;
   }
@@ -1051,9 +932,12 @@ select {
     font-size: 22px;
   }
 
-  .hero-button,
-  .form-button {
-    width: 100%;
+  .hero-button {
+    max-width: 250px;
+  }
+
+  .country-section {
+    padding-top: 250px;
   }
 
   .rest-card,
@@ -1067,5 +951,23 @@ select {
 
   .contact-info {
     font-size: 16px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+  form.form {
+    padding: 20px;
+  }
+  .form-days-label div,
+  .form-price-label div {
+    flex: 1 1 100%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }

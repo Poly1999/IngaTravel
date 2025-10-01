@@ -40,11 +40,11 @@
     <header class="header">
       <div class="header-container">
         <nav class="header-nav">
-          <a href="index.html" class="header-logo">
+          <!-- <a href="index.html" class="header-logo">
             <img src="./image/logo.png" alt="Logo Inga Travel"
-          /></a>
+          /></a> -->
           <ul class="header-menu">
-            <li><a class="link" href="#about">О нас</a></li>
+            <li><a class="link" href="#about">Про меня</a></li>
             <li><a class="link" href="#country">Страны</a></li>
             <li><a class="link" href="#rest">Отдых</a></li>
             <li><a class="link" href="#contacts">Контакты</a></li>
@@ -81,14 +81,14 @@
         </div>
         <h2 class="hidden">Услуги</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">Путишествия</li>
+          <li class="advantages-item">Путешествия</li>
           <li class="advantages-item">Отдых</li>
           <li class="advantages-item">Приключения</li>
           <li class="advantages-item">Развлечения</li>
         </ul>
       </section>
       <section class="about" id="about">
-        <h2 class="about-title">О нас</h2>
+        <h2 class="about-title">Про меня</h2>
         <p class="about-text">
           Я — профессиональный турагент, работающий в одной из крупнейшей
           туристической компании Fridman Travel.Наше агентство на рынке с 2016
@@ -327,7 +327,7 @@
           </div>
 
           <div class="rest-card fade-in">
-            <h3 class="rest-card-title">Друзьями</h3>
+            <h3 class="rest-card-title">С друзьями</h3>
             <p class="rest-card-desc">
               Активные приключения, новые эмоции и яркие воспоминания вместе с
               близкими.
@@ -398,12 +398,12 @@
           <input
             class="input-control"
             type="tel"
-            name="phone"
+            name="Телефон"
             placeholder="Введите ваш номер телефона"
             required
           />
           <label for="country">Направление</label>
-          <select id="form-country" name="country" required>
+          <select id="form-country" name="Страна">
             <option value="">Выберите страну</option>
             <option value="Страны Азии (Таиланд, Вьетнам, Индия и т.д.)">
               Страны Азии (Таиланд, Вьетнам, Индия и т.д.)
@@ -420,6 +420,7 @@
             <option value="Курорты России">Курорты России</option>
           </select>
           <div class="form-number">
+            Бюджет
             <label class="form-label">Количество туристов</label>
             <button class="button-tur minus" type="button">-</button>
             <input
@@ -427,13 +428,13 @@
               type="number"
               value="1"
               min="1"
-              name="quantity"
+              name="Количество туристов"
             />
             <button class="button-tur plus" type="button">+</button>
           </div>
 
           <label class="form-label" for="fly">Когда планируете отыхать?</label>
-          <select id="form-fly" name="fly" required>
+          <select id="form-fly" name="Вылет">
             <option value="">Выберите диапозон</option>
             <option value="Вылет в ближайшую неделю">
               Вылет в ближайшую неделю
@@ -454,25 +455,37 @@
             <div class="form-days-label">
               <div class="form-days-input">
                 <label>
-                  <input type="radio" name="day" value="до 7 ночей" />
+                  <input
+                    type="radio"
+                    name="Количество ночей"
+                    value="до 7 ночей"
+                  />
                   до 7 ночей
                 </label>
               </div>
               <div class="form-days-input">
                 <label>
-                  <input type="radio" name="day" value="10–14 ночей" />
+                  <input
+                    type="radio"
+                    name="Количество ночей"
+                    value="10–14 ночей"
+                  />
                   10–14 ночей
                 </label>
               </div>
               <div class="form-days-input">
                 <label>
-                  <input type="radio" name="day" value="больше 14 ночей" />
+                  <input
+                    type="radio"
+                    name="Количество ночей"
+                    value="больше 14 ночей"
+                  />
                   больше 14 ночей
                 </label>
               </div>
               <div class="form-days-input">
                 <label>
-                  <input type="radio" name="day" value="Не знаю" />
+                  <input type="radio" name="Количество ночей" value="Не знаю" />
                   Не знаю
                 </label>
               </div>
@@ -484,24 +497,23 @@
             <div class="form-price-label">
               <div>
                 <label>
-                  <input
-                    type="radio"
-                    name="price"
-                    value="до 50 тыс./чел."
-                    required
-                  />
+                  <input type="radio" name="Бюджет" value="до 50 тыс./чел." />
                   до 50 тыс./чел.
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="price" value="50–80 тыс./чел." />
+                  <input type="radio" name="Бюджет" value="50–80 тыс./чел." />
                   50–80 тыс./чел.
                 </label>
               </div>
               <div>
                 <label>
-                  <input type="radio" name="price" value="  80–100 тыс./чел." />
+                  <input
+                    type="radio"
+                    name="Бюджет"
+                    value="  80–100 тыс./чел."
+                  />
                   80–100 тыс./чел.
                 </label>
               </div>
@@ -509,7 +521,7 @@
                 <label>
                   <input
                     type="radio"
-                    name="price"
+                    name="Бюджет"
                     value="Больше 100 тыс./чел."
                   />
                   Больше 100 тыс./чел.
@@ -529,13 +541,13 @@
 
         <div class="social-icons">
           <!-- Instagram -->
-          <a
+          <!-- <a
             href="https://www.instagram.com/travel_agent_inga?igsh=MWIxZ3FqNXA0ODU1dQ=="
             target="_blank"
             class="social-icon instagram"
           >
             <i class="fab fa-instagram"></i>
-          </a>
+          </a> -->
 
           <!-- WhatsApp -->
           <a
@@ -569,11 +581,11 @@
       <footer class="footer">
         <div class="footer-container">
           <nav class="footer-nav">
-            <a href="index.html" class="footer-logo">
+            <!-- <a href="index.html" class="footer-logo">
               <img src="./image/logo.png" alt="Logo Inga Travel"
-            /></a>
+            /></a> -->
             <ul class="footer-menu">
-              <li><a class="link" href="#about">О нас</a></li>
+              <li><a class="link" href="#about">Про меня</a></li>
               <li><a class="link" href="#country">Страны</a></li>
               <li><a class="link" href="#rest">Отдых</a></li>
               <li><a class="link" href="#contacts">Контакты</a></li>
@@ -585,13 +597,13 @@
         <!-- <p class="footer-tel">+7 (968) 884-5757</p> -->
         <div class="footer-icons">
           <!-- Instagram -->
-          <a
+          <!-- <a
             href="https://www.instagram.com/travel_agent_inga?igsh=MWIxZ3FqNXA0ODU1dQ=="
             target="_blank"
             class="footer-icon instagram"
           >
             <i class="fab fa-instagram"></i>
-          </a>
+          </a> -->
 
           <!-- WhatsApp -->
           <a

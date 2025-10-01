@@ -5,11 +5,38 @@ const swiper = new Swiper('.swiper', {
 
   slidesPerView: 3,
   centeredSlides: true,
+  spaceBetween: 10,
+
+  // Адаптивные настройки
+  breakpoints: {
+    // когда ширина окна >= 0px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      centeredSlides: true,
+    },
+    // когда ширина окна >= 480px
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+      centeredSlides: true,
+    },
+    // когда ширина окна >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // когда ширина окна >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      centeredSlides: true,
+    },
+  },
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-
     dynamicBullets: true,
     clickable: true,
   },
