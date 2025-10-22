@@ -124,15 +124,13 @@ h2 {
   flex-direction: column;
   justify-content: start;
   gap: 33px;
-  max-width: 850px;
-  padding: 94px 0 356px 150px;
+  padding: 94px 600px 356px 150px;
 }
 
 .hero-title {
   color: var(--light-main-color);
   font-weight: 700;
   font-size: 70px;
-  line-height: 107%;
 }
 
 .hero-text {
